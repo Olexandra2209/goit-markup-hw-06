@@ -550,3 +550,22 @@ body {
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0);
 }
+.section-subscribe {
+  margin-left: 80px;
+}
+.subscribe-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--white-color);
+  margin-bottom: 16px;
+}
+.subscribe-form {
+  display: flex;
+  justify-content: end;
+}
+.subscribe-button {
+}
+.subscribe-icon {
+}

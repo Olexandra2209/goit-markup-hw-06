@@ -552,6 +552,8 @@ body {
 }
 .section-subscribe {
   margin-left: 80px;
+  display: flex;
+  justify-content: end;
 }
 .subscribe-title {
   font-weight: 500;
@@ -563,7 +565,6 @@ body {
 }
 .subscribe-form {
   display: flex;
-  justify-content: end;
 }
 .subscribe-button {
 }

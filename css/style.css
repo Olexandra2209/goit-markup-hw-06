@@ -560,6 +560,17 @@ body {
   opacity: 0.2;
   border: 1px solid #2e2f42;
   border-radius: 4px;
+  outline: transparent;
+}
+.form-textarea {
+  display: block;
+  width: 100%;
+  min-height: 120px;
+  opacity: 0.2;
+  border: 1px solid #2e2f42;
+  border-radius: 4px;
+  outline: transparent;
+  resize: none;
 }
 .form-label span {
   display: block;
@@ -575,9 +586,17 @@ body {
   position: relative;
 }
 .form-icon {
+  display: block;
   position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translate(-50%);
 }
 .form-group {
+}
+.modal-input {
+  padding: 0px;
+  gap: 8px;
 }
 .is-hidden {
   opacity: 0;
@@ -601,6 +620,11 @@ body {
 .subscribe-form {
   display: flex;
 }
+.subscribe-label {
+  border: 1px solid #ffffff;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
 .subscribe-button {
   font-family: 'Roboto';
   font-style: normal;
@@ -616,5 +640,5 @@ body {
   border-radius: 4px;
 }
 .subscribe-icon {
-  color: #ffffff;
+  fill: #ffffff;
 }

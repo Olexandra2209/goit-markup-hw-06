@@ -543,8 +543,6 @@ body {
 .modal-icon {
 }
 .modal-title {
-  font-family: 'Roboto';
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -558,29 +556,37 @@ body {
   width: 100%;
   height: 40px;
   opacity: 0.2;
-  border: 1px solid #2e2f42;
+  border: 1px solid rgba(46, 47, 66, 0.2);
   border-radius: 4px;
   outline: transparent;
+  padding: 11px 38px;
 }
 .form-textarea {
   display: block;
   width: 100%;
   min-height: 120px;
   opacity: 0.2;
-  border: 1px solid #2e2f42;
+  border: 1px solid rgba(46, 47, 66, 0.2);
   border-radius: 4px;
   outline: transparent;
   resize: none;
+  padding: 8px 16px;
+}
+.form-input:focus,
+.form-textarea:focus {
+  border: 1px solid var(--primary-brand);
+  outline: none;
+}
+.form-input:focus + .form-icon {
+  fill: var(--primary-brand);
 }
 .form-label span {
   display: block;
-  margin-bottom: 4px;
-  font-family: 'Roboto';
-  font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
+  margin-bottom: 4px;
 }
 .form-control {
   position: relative;
@@ -588,15 +594,40 @@ body {
 .form-icon {
   display: block;
   position: absolute;
-  left: 16px;
+  left: 0;
   top: 50%;
-  transform: translate(-50%);
+  transform: translateY(-50%);
+  margin-left: 16px;
 }
 .form-group {
+  margin-bottom: 8px;
 }
 .modal-input {
   padding: 0px;
   gap: 8px;
+}
+.form-checkbox {
+}
+.form-label-checkbox {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+}
+.form-label-checkbox span {
+  width: 16px;
+  height: 16px;
+  background-color: var(--hover-color);
+  border: 1px solid var(--hover-color);
+  border-radius: 2px;
+  margin-right: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: transparent;
+}
+.form-label-checkbox:checked + .form-label-checkbox span {
+  fill: var(--background-color);
 }
 .is-hidden {
   opacity: 0;
@@ -621,10 +652,13 @@ body {
   display: flex;
 }
 .subscribe-input {
-  border: 1px solid #ffffff;
+  width: 264px;
+  padding-left: 16px;
+  color: var(--white-color);
+  border: 1px solid var(--white-color);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  background-color: #2e2f42;
+  background-color: transparent;
 }
 .subscribe-input::placeholder {
   font-weight: 400;
@@ -634,7 +668,6 @@ body {
   align-items: center;
   letter-spacing: 0.04em;
   color: var(--white-color);
-  padding: 8px 16px;
 }
 .subscribe-button {
   display: flex;

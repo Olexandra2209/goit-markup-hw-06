@@ -294,28 +294,35 @@
         <div class="modal-input">
           <div class="form-group">
             <label class="form-label" for="user-name"><span>Name</span>
-              <div class="form-control"><input type="text" class="form-input" name="fullname" id="user-name"><svg
-                  class="form-icon" width="12" height="12">
+              <div class="form-control"><input type="text" class="form-input" name="fullname" required
+                  id="user-name"><svg class="form-icon" width="18" height="18">
                   <use href="./images/icon.svg#icon-person"></use>
                 </svg></div>
             </label>
           </div>
           <div class="form-group"><label class="form-label" for="user-tel"><span>Phone</span>
-              <div class="form-control"><input type="tel" class="form-input" name="phone" id="user-tel"><svg
-                  class="form-icon" width="13" height="13">
+              <div class="form-control"><input type="tel" class="form-input form-input-text" name="phone" required
+                  id="user-tel"><svg class="form-icon" width="18" height="24">
                   <use href="./images/icon.svg#icon-phone"></use>
                 </svg></div>
             </label></div>
           <div class="form-group"><label class="form-label" for="user-email"><span>Email</span>
-              <div class="form-control"><input type="email" class="form-input" name="email" id="user-email"><svg
-                  class="form-icon" width="15" height="12">
+              <div class="form-control"><input type="email" class="form-input form-input-text" name="email" required
+                  id="user-email"><svg class="form-icon" width="18" height="24">
                   <use href="./images/icon.svg#icon-email"></use>
                 </svg></div>
             </label></div>
           <div class="form-group"><label class="form-label" for="user-text"><span>Comment</span><textarea
-                class="form-textarea" name="comment" id="user-text" placeholder="Text input" cols="30"
+                class="form-textarea form-input-text" name="comment" id="user-text" placeholder="Text input" cols="30"
                 rows="10"></textarea></label></div>
-        </div><button type="submit" class="form-btn btn">Send</button>
+        </div>
+        <div class="form-group"><input type="checkbox" class="form-checkbox visually-hidden" name="policy"
+            id="policy"><label class="form-label-checkbox" for="policy"><span><svg class="form-checkbox-icon">
+                <use href="./images/icon.svg#icon-vector" width="10" height="8"></use>
+              </svg></span> I accept the
+            terms and
+            conditions of the Privacy
+            Policy</label></div><button type="submit" class="form-btn btn">Send</button>
       </form>
     </div>
 

@@ -537,7 +537,9 @@ body {
   background-color: #e7e9fc;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-left: auto;
   cursor: pointer;
   transition-property: background-color, border, fill;
@@ -600,7 +602,8 @@ body {
 
 .form-input:focus,
 .form-textarea:focus {
-  border: 1px solid var(--primary-brand);
+  border: 1px solid rgb(77, 90, 229, 1);
+  opacity: 1;
   outline: none;
 }
 .form-input:focus + .form-icon {

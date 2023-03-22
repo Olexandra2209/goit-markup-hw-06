@@ -569,9 +569,6 @@ body {
 .form-input {
   width: 100%;
   height: 40px;
-  opacity: 0.2;
-  border: 1px solid rgba(46, 47, 66, 0.2);
-  border-radius: 4px;
   outline: transparent;
   padding: 11px 38px;
   transition-property: border;
@@ -582,15 +579,16 @@ body {
   display: block;
   width: 100%;
   min-height: 120px;
-  opacity: 0.2;
-  border: 1px solid rgba(46, 47, 66, 0.2);
-  border-radius: 4px;
   outline: transparent;
   resize: none;
   padding: 8px 16px;
   transition-property: border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-input-text {
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
 }
 .form-input-text::placeholder {
   font-weight: 400;
@@ -645,7 +643,7 @@ body {
   justify-content: center;
   width: 16px;
   height: 16px;
-  border: 1px solid #2e2f42;
+  border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
   margin-right: 8px;
   transition-property: background-color, border;
@@ -676,6 +674,13 @@ body {
   justify-content: center;
   margin-top: 16px;
   margin-left: 0;
+}
+.form-checkbox {
+  color: rgba(46, 47, 66, 0.4);
+}
+.form-checkbox::placeholder {
+  color: rgba(46, 47, 66);
+  opacity: 1;
 }
 .form-checkbox:checked + .checkbox-icon {
   background-color: var(--hover-color);
